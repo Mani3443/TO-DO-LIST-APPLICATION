@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.mainContainer{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(140deg,#4e085f,#153677);
+    padding: 10px;
+    padding-top: 140px;
+}
+.subContainer{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(143, 143, 182);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.subContainer h1{
+    color: #2f0130;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border: none;
+    outline:none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #fc6554;
+    color: #ebdbdb;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/arrows-160/96/uncheckedV_circle-512.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgb(53, 1, 61);
+    text-decoration : line-through;
+}
+ul li.checked::before{
+    background-image: url('https://svgsilh.com/png-512/1425312.png');
+}
+ul li del{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:rgb(221, 0, 255);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+ul li del:hover{
+    background: rgba(93, 83, 83, 0.267);
+}
